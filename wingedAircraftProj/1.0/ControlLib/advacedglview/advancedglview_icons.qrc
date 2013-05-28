@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>icons/rotDown.jpg</file>
+        <file>icons/rotLeft.jpg</file>
+        <file>icons/rotRight.jpg</file>
+        <file>icons/rotUp.jpg</file>
+        <file>icons/arrowdown.jpg</file>
+        <file>icons/arrowleft.jpg</file>
+        <file>icons/arrowright.jpg</file>
+        <file>icons/arrowup.jpg</file>
+        <file>icons/settings.jpg</file>
+        <file>icons/zoomin.jpg</file>
+        <file>icons/zoomout.jpg</file>
+        <file>icons/leftview.jpg</file>
+        <file>icons/rightview.jpg</file>
+        <file>icons/bottomview.jpg</file>
+        <file>icons/topview.jpg</file>
+        <file>icons/frontview.jpg</file>
+        <file>icons/backview.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/IIST_Logo.png</file>
+    </qresource>
+</RCC>

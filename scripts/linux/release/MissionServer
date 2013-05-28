@@ -1,0 +1,3 @@
+cd './../../../wingedAircraftProj/1.0/bin/release'
+export LD_LIBRARY_PATH='.':'./../../../../thirdparty/qserialport/bin'
+./MissionServer

@@ -1,0 +1,13 @@
+[portmapping]
+DDRA = $3A
+PORTA = $3B
+PINA = $39
+DDRB = $37
+PORTB = $38
+PINB = $36
+DDRC = $34
+PORTC = $35
+PINC = $33
+DDRD = $31
+PORTD = $32
+PIND = $30

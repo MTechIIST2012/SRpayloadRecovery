@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdvancedGLView</class>
+ <widget class="QWidget" name="AdvancedGLView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>585</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <property name="formAlignment">
+    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+   </property>
+   <item row="0" column="0">
+    <widget class="QToolButton" name="btnViewCompDlg">
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="advancedglview_icons.qrc">
+       <normaloff>:/icon/icons/settings.jpg</normaloff>:/icon/icons/settings.jpg</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <item>
+      <widget class="ContinToolButton" name="btnZoomIn">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/zoomin.jpg</normaloff>:/icon/icons/zoomin.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="ContinToolButton" name="btnZoomOut">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/zoomout.jpg</normaloff>:/icon/icons/zoomout.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <item row="1" column="0">
+      <widget class="ContinToolButton" name="btnMoveLeft">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/arrowright.jpg</normaloff>:/icon/icons/arrowright.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="ContinToolButton" name="btnMoveRight">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/arrowleft.jpg</normaloff>:/icon/icons/arrowleft.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="ContinToolButton" name="btnMoveDown">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/arrowdown.jpg</normaloff>:/icon/icons/arrowdown.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="ContinToolButton" name="btnMoveUp">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/arrowup.jpg</normaloff>:/icon/icons/arrowup.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QToolButton" name="btnProjTop">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/bottomview.jpg</normaloff>:/icon/icons/bottomview.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QToolButton" name="btnProjBottom">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/topview.jpg</normaloff>:/icon/icons/topview.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QToolButton" name="btnProjLeft">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/rightview.jpg</normaloff>:/icon/icons/rightview.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QToolButton" name="btnProjRight">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/leftview.jpg</normaloff>:/icon/icons/leftview.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QToolButton" name="btnProjBack">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/backview.jpg</normaloff>:/icon/icons/backview.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QToolButton" name="btnProjFront">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/frontview.jpg</normaloff>:/icon/icons/frontview.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <item row="1" column="0">
+      <widget class="ContinToolButton" name="btnRotLeft">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/rotLeft.jpg</normaloff>:/icon/icons/rotLeft.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="ContinToolButton" name="btnRotRight">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/rotRight.jpg</normaloff>:/icon/icons/rotRight.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="ContinToolButton" name="btnRotDown">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/rotDown.jpg</normaloff>:/icon/icons/rotDown.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="ContinToolButton" name="btnRotUp">
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="advancedglview_icons.qrc">
+         <normaloff>:/icon/icons/rotUp.jpg</normaloff>:/icon/icons/rotUp.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ContinToolButton</class>
+   <extends>QToolButton</extends>
+   <header location="global">contintoolbutton.h</header>
+   <slots>
+    <signal>clickUpdate()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="advancedglview_icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

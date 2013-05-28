@@ -1,0 +1,6 @@
+#ifndef PROJECT_CONSTS_H
+#define PROJECT_CONSTS_H
+
+#define MANAGER_COMMAND_MAX_WAIT 100   // ms
+
+#endif // PROJECT_CONSTS_H

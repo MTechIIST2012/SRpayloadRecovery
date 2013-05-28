@@ -1,0 +1,12 @@
+#ifndef CONTROLLIB_GLOBAL_H
+#define CONTROLLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CONTROLLIB_LIBRARY)
+#  define CONTROLLIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define CONTROLLIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CONTROLLIB_GLOBAL_H

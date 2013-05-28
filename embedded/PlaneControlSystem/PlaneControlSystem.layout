@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Arduino Duemilanove (328)" />
+	<File name="../../communication/interfaces/IBuffer_E.h" open="0" top="0" tabpos="6">
+		<Cursor position="314" topLine="0" />
+	</File>
+	<File name="../../communication/interfaces/IControllerPipe.h" open="1" top="0" tabpos="2">
+		<Cursor position="536" topLine="6" />
+	</File>
+	<File name="../../communication/interfaces/_LinkedList.h" open="0" top="0" tabpos="0">
+		<Cursor position="7610" topLine="246" />
+	</File>
+	<File name="../../communication/interfaces/embedded_typedefs.h" open="0" top="0" tabpos="1">
+		<Cursor position="124" topLine="1" />
+	</File>
+	<File name="../../communication/src/Communication_E.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="2412" topLine="85" />
+	</File>
+	<File name="../../communication/src/Communication_E.h" open="0" top="0" tabpos="5">
+		<Cursor position="98" topLine="0" />
+	</File>
+	<File name="../../communication/src/DataPackets_E.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="10579" topLine="388" />
+	</File>
+	<File name="../../communication/src/DataPackets_E.h" open="0" top="0" tabpos="3">
+		<Cursor position="3661" topLine="107" />
+	</File>
+	<File name="../../communication/src/_CircularBuffer.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="1496" topLine="48" />
+	</File>
+	<File name="../../communication/src/_CircularBuffer.h" open="0" top="0" tabpos="8">
+		<Cursor position="361" topLine="0" />
+	</File>
+	<File name="../../communication/src/_String.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="7139" topLine="216" />
+	</File>
+	<File name="../../communication/src/_String.h" open="0" top="0" tabpos="2">
+		<Cursor position="599" topLine="0" />
+	</File>
+	<File name="ControllerPipe.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="832" topLine="39" />
+	</File>
+	<File name="ControllerPipe.h" open="0" top="0" tabpos="10">
+		<Cursor position="590" topLine="7" />
+	</File>
+	<File name="sketch.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="1199" topLine="3" />
+	</File>
+	<File name="../interfaces/IControlledObj_E.h" open="0" top="0" tabpos="4">
+		<Cursor position="265" topLine="0" />
+	</File>
+	<File name="../interfaces/IMeter_E.h" open="1" top="0" tabpos="3">
+		<Cursor position="175" topLine="0" />
+	</File>
+	<File name="../interfaces/IPathPlanner_E.h" open="0" top="0" tabpos="14">
+		<Cursor position="412" topLine="0" />
+	</File>
+	<File name="../interfaces/IPlaneController.h" open="1" top="0" tabpos="1">
+		<Cursor position="636" topLine="0" />
+	</File>
+	<File name="../interfaces/IPlane_E.h" open="1" top="0" tabpos="10">
+		<Cursor position="807" topLine="3" />
+	</File>
+	<File name="../interfaces/ISensor_E.h" open="1" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../interfaces/controlledObj/IAileron_E.h" open="1" top="0" tabpos="8">
+		<Cursor position="279" topLine="0" />
+	</File>
+	<File name="../interfaces/controlledObj/IElevator_E.h" open="0" top="0" tabpos="4">
+		<Cursor position="279" topLine="0" />
+	</File>
+	<File name="../interfaces/controlledObj/IEngine_E.h" open="0" top="0" tabpos="3">
+		<Cursor position="131" topLine="0" />
+	</File>
+	<File name="../interfaces/controlledObj/IRudder_E.h" open="0" top="0" tabpos="5">
+		<Cursor position="300" topLine="0" />
+	</File>
+	<File name="../interfaces/controlledObj/IThrust_E.h" open="0" top="0" tabpos="7">
+		<Cursor position="309" topLine="0" />
+	</File>
+	<File name="../interfaces/meters/IAcceleroMeter_E.h" open="0" top="0" tabpos="12">
+		<Cursor position="305" topLine="0" />
+	</File>
+	<File name="../interfaces/meters/IGPS_E.h" open="1" top="0" tabpos="6">
+		<Cursor position="314" topLine="0" />
+	</File>
+	<File name="../interfaces/meters/IGyroMeter_E.h" open="1" top="0" tabpos="7">
+		<Cursor position="68" topLine="0" />
+	</File>
+	<File name="../interfaces/meters/IMagnetoMeter_E.h" open="0" top="0" tabpos="0">
+		<Cursor position="278" topLine="0" />
+	</File>
+	<File name="../interfaces/meters/IPressureSensor_E.h" open="0" top="0" tabpos="0">
+		<Cursor position="283" topLine="0" />
+	</File>
+	<File name="../interfaces/planepartdefs.h" open="1" top="0" tabpos="4">
+		<Cursor position="70" topLine="0" />
+	</File>
+	<File name="../plane_core/PathPlanner_E.cpp" open="1" top="0" tabpos="12">
+		<Cursor position="226" topLine="0" />
+	</File>
+	<File name="../plane_core/PathPlanner_E.h" open="0" top="0" tabpos="6">
+		<Cursor position="465" topLine="0" />
+	</File>
+	<File name="../plane_core/PlaneController.cpp" open="1" top="1" tabpos="13">
+		<Cursor position="2626" topLine="88" />
+	</File>
+	<File name="../plane_core/PlaneController.h" open="0" top="0" tabpos="1">
+		<Cursor position="1052" topLine="0" />
+	</File>
+	<File name="../plane_core/Plane_E.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="5081" topLine="158" />
+	</File>
+	<File name="../plane_core/Plane_E.h" open="1" top="0" tabpos="9">
+		<Cursor position="682" topLine="21" />
+	</File>
+	<File name="../../thirdparty/arduino/TimerOne-v9/TimerOne.h" open="0" top="0" tabpos="0">
+		<Cursor position="3003" topLine="38" />
+	</File>
+</CodeBlocks_layout_file>

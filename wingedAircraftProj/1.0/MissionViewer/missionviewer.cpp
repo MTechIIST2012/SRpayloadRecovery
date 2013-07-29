@@ -19,6 +19,7 @@
 #include <QTimer>
 #include <QIcon>
 #include <QApplication>
+#include <QDebug>
 
 MissionViewer::MissionViewer(QWidget *parent) :
     Viewer(parent)
@@ -26,7 +27,6 @@ MissionViewer::MissionViewer(QWidget *parent) :
     setWindowTitle("MissionViewer");
     QIcon icon(":/icons/icons/IIST_Logo.png");
     setWindowIcon(icon);
-
     mPlane = new Plane(this);
     mComm = 0;
     mTcpSocket = 0;
@@ -42,6 +42,7 @@ MissionViewer::MissionViewer(QWidget *parent) :
             SIGNAL(aboutDialogReqest()),
             this,
             SLOT(showAbout()));
+
 }
 
 MissionViewer::~MissionViewer()
@@ -196,6 +197,7 @@ void MissionViewer::createMdiWindows()
 {
     foreach(QString viewtype,glstViewTypes)
     {
+        qDebug() << "Creating viewtype :" << viewtype ;
         QMdiSubWindow* view = createView(viewtype,viewtype);
         addMdiSubWindow(viewtype,view);
     }
@@ -258,7 +260,8 @@ void MissionViewer::createTcpComm(QString host,int port)
                                  tr("Connection"),
                                  tr("Connection failed"));
         delete mTcpSocket;
-        mPacketTimer->stop();
+        if(mPacketTimer)
+            mPacketTimer->stop();
         mTcpSocket = 0;
     }
 }

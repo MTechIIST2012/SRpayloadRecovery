@@ -8,6 +8,9 @@
 #include <QStringList>
 #include <QList>
 #include <QTimer>
+#include <QDebug>
+#include <QFile>
+#include <QFileInfo>
 
 MdiPlaneView::MdiPlaneView(QString configFile,QWidget *parent)
     : Mdi3dView(parent)
@@ -186,8 +189,19 @@ QVector3D MdiPlaneView::parseVector(QString str)
 
 void MdiPlaneView::initScene()
 {
+    if(!QFile::exists(mModelFileName))
+    {
+        qDebug() << QString("Template file %0 does not exist").arg(mModelFileName);
+        return;
+    }
     QGLAbstractScene* scene = QGLAbstractScene::loadScene(mModelFileName);
     setScene(scene);
+
+    if(!scene)
+    {
+        qDebug() << QString("An error occured in loading scene");
+        return;
+    }
 
     ObjectInfoHash objInfoHash;
     QHash<QString,QString> partLabelMap;
@@ -202,7 +216,9 @@ void MdiPlaneView::initScene()
     setObjectViewInfo(objInfoHash);
     getGLView()->setObjectLabelMap(partLabelMap);
 
-    QGLSceneNode* bodyNode = dynamic_cast<QGLSceneNode*>(scene->object(mObjectModelMap.value(BODY)));
+    QString objname = mObjectModelMap.value(BODY);
+    QObject* obj = scene->object(objname);
+    QGLSceneNode* bodyNode = qobject_cast<QGLSceneNode*>(obj);
     if(bodyNode)
     {
         foreach(int partId,mGraphicRotMap.keys())
@@ -213,14 +229,15 @@ void MdiPlaneView::initScene()
                 QString actualName = mObjectModelMap.value(partId);
                 if(rot && !actualName.isEmpty())
                 {
-                    QGLSceneNode* node = dynamic_cast<QGLSceneNode*>(scene->object(actualName));
+                    QGLSceneNode* node = qobject_cast<QGLSceneNode*>(scene->object(actualName));
                     if(node)
                     {
-                        QGLSceneNode* curParent = dynamic_cast<QGLSceneNode*>(node->parent());
+                        QGLSceneNode* curParent = qobject_cast<QGLSceneNode*>(node->parent());
                         if(curParent)
                         {
                             curParent->removeNode(node);
                         }
+
                         bodyNode->addNode(node);
                         node->addTransform(rot);
                     }
